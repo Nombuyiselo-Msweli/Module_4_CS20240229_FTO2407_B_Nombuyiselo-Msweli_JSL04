@@ -5,7 +5,7 @@
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
 
 //--- MY CODE ----
-let userPreference ="Undefined";  // Possible values: 'Regular', 'Sugar-free', or undefined
+let userPreference ="Sugar-free";  // Possible values: 'Regular', 'Sugar-free', or undefined
 let userChoice = userPreference === "Sugar-free" ? "Sugar-free" : "Regular"
 console.log(userChoice);
 
@@ -47,11 +47,24 @@ console.log(tempAlert);
 // otherwise, print "Better stick to water."
 
 // Define the current hour in 24-hour format
-let currentHour = 22; 
+//let currentHour = 22; 
+
+//--- MY CODE ---
+function convertTo24Hour(timeString) {                    //function convertTo24Hour uses the method .toLocalTimeString to convert to 24 hour time
+    let date = new Date(`04/09/2024 ${timeString}`);      //calls the new date data type, passing the parameter 'dataString' ('04/09/2024' + timeString ), this time String we define in our variable currentHour
+    let formattedTime = date.toLocaleTimeString('en-US',
+        { hour12: false });                               //date object, inbuilt data-type that measures the exact date, hour, minutes, seconds etc. within 100 million days before or after 1/1/1970.
+    return formattedTime;
+}
+
+let currentHour = '10:00 PM';
+let formattedTime = convertTo24Hour(currentHour); //calling convert to 24 hour function
+console.log(formattedTime);
 
 // Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
 // Otherwise, print "Better stick to water."
+
 
 
 
