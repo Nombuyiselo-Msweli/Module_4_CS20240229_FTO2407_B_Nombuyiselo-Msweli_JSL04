@@ -57,7 +57,7 @@ function convertTo24Hour(timeString) {                    //function convertTo24
     return formattedTime;
 }
 
-let currentHour = '10:00 PM';
+let currentHour = '01:00 AM';
 let formattedTime = convertTo24Hour(currentHour); //calling convert to 24 hour function
 console.log(formattedTime);
 
@@ -65,7 +65,8 @@ console.log(formattedTime);
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
 // Otherwise, print "Better stick to water."
 
-
+let timeAlert = formattedTime <= '00:00:00' || formattedTime >= '07:00:00' ? "Unleash the beast!" : "Better stick to water."
+console.log(timeAlert);
 
 
 
