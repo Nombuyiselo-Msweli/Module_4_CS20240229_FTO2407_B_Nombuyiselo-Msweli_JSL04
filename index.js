@@ -25,8 +25,10 @@ console.log(stockTake);
 // Based on the current heart rate, determine if the user should drink a Monster Energy drink to boost their workout. 
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
-let heartRate = 95; // Current heart rate in bpm
-console.log(`'}`);
+//--- MY CODE ---
+let heartRate = 99; // Current heart rate in bpm
+let monitorMessage = heartRate < 100 ? "Boost needed!" : "Energy levels are high!"
+console.log(monitorMessage);
 
 
 // #### Challenge 4: Temperature Suitability
