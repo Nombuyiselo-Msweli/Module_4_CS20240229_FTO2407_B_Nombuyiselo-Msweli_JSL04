@@ -4,8 +4,9 @@
 // Given a variable that holds a user's preferred type of Monster Energy drink, 
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
 
+//--- MY CODE ----
 let userPreference ="Undefined";  // Possible values: 'Regular', 'Sugar-free', or undefined
-const userChoice = userPreference === "Sugar-free" ? "Sugar-free" :"Regular"
+let userChoice = userPreference === "Sugar-free" ? "Sugar-free" : "Regular"
 console.log(userChoice);
 
 
@@ -14,8 +15,10 @@ console.log(userChoice);
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
-let cansLeft = 3; // Any number of cans
-console.log(``);
+//--- MY CODE---
+let cansLeft = 4; // Any number of cans
+let stockTake = cansLeft >= 5 ? "We're stocked!" : "Time to restock!"
+console.log(stockTake);
 
 
 // #### Challenge 3: Workout Intensity
