@@ -9,6 +9,7 @@ let userPreference ="Sugar-free";  // Possible values: 'Regular', 'Sugar-free', 
 let userChoice = userPreference === "Sugar-free" ? "Sugar-free" : "Regular"
 console.log(userChoice);
 
+//CORRECTION: THEY WANTED console.log(${userChoice = userPreference === "Sugar-free" ? "Sugar-free" : "Regular"}), that's why they had the backticks for the template literals 
 
 
 // #### Challenge 2: Stock Check
@@ -66,7 +67,7 @@ console.log(formattedTime);
 // Otherwise, print "Better stick to water."
 
 let timeAlert = formattedTime <= '00:00:00' || formattedTime >= '07:00:00' ? "Unleash the beast!" : "Better stick to water."
-console.log(timeAlert);
+console.log(timeAlert); //instead of || you should have &&
 
 
 
